@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-*,html {
-    margin: 0;
+* {
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -116,14 +116,15 @@
 .social-links {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between;  */
+    justify-content: space-around;
+    flex-wrap: wrap; 
 }
 
 .social-link {
     color: var(--purple);
     font-size: 32px;
-    padding-right: 40px;
-    padding-left: 80px;
+    /* padding-right: 40px;
+    padding-left: 80px; */
 }
 
 .resume-link {
@@ -140,6 +141,7 @@
 .tools-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 80px;
 }
@@ -147,6 +149,7 @@
 .tools-section img {
     width: 50px;
     height: 50px;
+    padding: 5px;
 }
 
 .sub-heading {
@@ -235,7 +238,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
+    max-width: 50%;
     background-color: var(--white);
     margin: 10px;
     font-family: var(--font);
@@ -246,7 +249,7 @@
 
 .card-img {
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 100%;
 }
 .card-details {
     padding: 20px;
@@ -285,23 +288,24 @@
     flex-direction: row;
     align-items: center;
     font-family: var(--font);
-    padding: 40px 20px 40px 20px;
+    padding: 40px 10px 40px 10px;
 }
 
 .edu-card {
     /* border: 1px solid #50047A; */
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 13px;
+    margin-bottom: 5px;
+    margin-right: 5px;
     max-width: 50%;
     box-shadow: 5px -5px 15px 0px var(--darkBlue);
     
 }
 
 .edu-card h2 {
-    padding-bottom: 10px;
     color: var(--darkPurple);
-    font-size: 32px;
+    font-size: 26px;
+    margin: 0;
 }
 
 .edu-card h3 {
@@ -330,6 +334,7 @@
 .contact-container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     padding: 20px 20px 40px 20px;
 }
 
@@ -416,6 +421,7 @@
 }
 
 .footer {
+    width: 100vw;
     padding: 12px;
     background-color: var(--darkPurple);
 }
@@ -428,6 +434,57 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .section {
+        margin-left: 0px;
+    }
+    .nav-bar {
+        width: 50px;
+        display: none;
+    }
+    .home-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .head-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    #about-img {
+        max-width: 100%;
+    }
+    .edu-container {
+        flex-direction: column;
+    }
+    .edu-card {
+        max-width: 100%;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    #contact-img {
+        max-width: 100%;
+    }
+    .form-container {
+        padding: 0;
+    }
+    .form {
+        padding: 0;
+    }
+    .form input, .form textarea, .form button {
+        width: 100%;
+    }
+  }
 
 
 
