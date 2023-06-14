@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 * {
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -98,7 +98,7 @@
     color: var(--darkBlue);
     font-weight: 700;
     font-family: var(--font);
-    font-size: 60px;
+    font-size: 2.5rem;
 }
 .head-section span {
     color: var(--purple);
@@ -194,7 +194,7 @@
 
 .about-txt-section {
     font-family: var(--font);
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .about-txt-section h2 {
@@ -210,11 +210,11 @@
 
 .skills {
     font-family: var(--font);
-    padding: 20px;
+    padding: 20px 20px;
 }
 .skills h2 {
     color: var(--darkBlue);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 .skills a {
     font-size: 12px;
@@ -287,6 +287,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     font-family: var(--font);
     padding: 40px 10px 40px 10px;
 }
@@ -304,7 +305,7 @@
 
 .edu-card h2 {
     color: var(--darkPurple);
-    font-size: 26px;
+    font-size: 32px;
     margin: 0;
 }
 
@@ -334,7 +335,7 @@
 .contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     padding: 20px 20px 40px 20px;
 }
 
@@ -442,10 +443,11 @@
     .nav-bar {
         width: 50px;
         display: none;
+        
     }
     .home-container {
         flex-direction: column;
-        padding: 0;
+        padding: 10px;
     }
     .head-container {
         max-width: 100%;
@@ -459,6 +461,13 @@
     }
     .about-container {
         flex-direction: column;
+        padding: 10px;
+    }
+    .about-txt-section h2, .skills h2 {
+        text-align: center;
+    }
+    .about-txt-section,.skills {
+        padding: 5px;
     }
     #about-img {
         max-width: 100%;
@@ -471,6 +480,7 @@
     }
     .contact-container {
         flex-direction: column;
+        padding: 0px;
     }
     #contact-img {
         max-width: 100%;
