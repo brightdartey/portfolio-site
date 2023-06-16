@@ -1,6 +1,7 @@
-const navArrow = document.getElementsByClassName(".nav-arrow");
+const logo = document.querySelector(".logo");
+const navbar = document.querySelector(".nav-bar");
 
-navArrow.addEventListener("click", ()=>{
-
-    console.log(navArrow);
+logo.addEventListener("click", () => {
+    navbar.classList.toggle("res-nav")
 })
+
